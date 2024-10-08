@@ -1,0 +1,255 @@
+{
+  "customId": "query256685",
+  "queryName": "saidaDatasource",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Saida",
+  "entityFullName": "app.entity.Saida",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Saida",
+        "alias": "s",
+        "namespace": "app.entity.Saida"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "s"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": {
+      "type": "server",
+      "blocklyMethod": "beforeInsert",
+      "blocklyClass": "blockly.SaidaControl",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "id": "a5b27121",
+          "name": "saida\u0026lt;app.entity.Saida\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.SaidaControl",
+        "sourcePath": "src/main/java/blockly/SaidaControl.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "Execute",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "beforeInsert",
+            "hasReturn": "false",
+            "params": [
+              "saida\u0026lt;app.entity.Saida\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": {
+      "type": "server",
+      "blocklyMethod": "afterInsert",
+      "blocklyClass": "blockly.SaidaControl",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "saida\u0026lt;app.entity.Saida\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.SaidaControl",
+        "sourcePath": "src/main/java/blockly/SaidaControl.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "Execute",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "beforeInsert",
+            "hasReturn": "false",
+            "params": [
+              "saida\u0026lt;app.entity.Saida\u0026gt;"
+            ]
+          },
+          {
+            "name": "afterInsert",
+            "hasReturn": "false",
+            "params": [
+              "saida\u0026lt;app.entity.Saida\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "afterUpdate": null,
+    "afterDelete": {
+      "type": "server",
+      "blocklyMethod": "afterDelete",
+      "blocklyClass": "blockly.SaidaControl",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "saida\u0026lt;app.entity.Saida\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.SaidaControl",
+        "sourcePath": "src/main/java/blockly/SaidaControl.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "Execute",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "beforeInsert",
+            "hasReturn": "false",
+            "params": [
+              "saida\u0026lt;app.entity.Saida\u0026gt;"
+            ]
+          },
+          {
+            "name": "afterInsert",
+            "hasReturn": "false",
+            "params": [
+              "saida\u0026lt;app.entity.Saida\u0026gt;"
+            ]
+          },
+          {
+            "name": "afterDelete",
+            "hasReturn": "false",
+            "params": [
+              "saida\u0026lt;app.entity.Saida\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "user": {
+      "type": "server",
+      "blocklyMethod": "getLoggedUser",
+      "blocklyClass": "blockly.UserControl",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.UserControl",
+        "sourcePath": "src/main/java/blockly/UserControl.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "signUp",
+            "hasReturn": "true",
+            "params": [
+              "username",
+              "email",
+              "password"
+            ]
+          },
+          {
+            "name": "resetPassword",
+            "hasReturn": "true",
+            "params": [
+              "email",
+              "isMobile"
+            ]
+          },
+          {
+            "name": "getLoggedUser",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "product": null,
+    "qtdSaida": null,
+    "date": null,
+    "user_name": null,
+    "product_name": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "user": null,
+    "product": null,
+    "qtdSaida": null,
+    "date": null,
+    "user_name": null,
+    "product_name": null
+  },
+  "security": {
+    "id": null,
+    "user": null,
+    "product": null,
+    "qtdSaida": null,
+    "date": null,
+    "user_name": null,
+    "product_name": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query256685/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}
